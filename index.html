@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Julio El Importador</title>
+
+<link rel="icon" href="logo.png">
+
+<style>
+body {
+  font-family: 'Segoe UI', sans-serif;
+  margin: 0;
+  background: #eef3f9;
+}
+
+/* HEADER */
+header {
+  background: linear-gradient(90deg, #0077cc, #00aaff);
+  color: white;
+  padding: 30px 20px;
+  text-align: center;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 28px;
+}
+
+header p {
+  margin: 5px 0 0;
+  opacity: 0.9;
+}
+
+/* MENU */
+.menu {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 10px;
+  background: white;
+  padding: 15px;
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu a {
+  text-decoration: none;
+  background: #0077cc;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 20px;
+  font-size: 14px;
+  transition: 0.3s;
+}
+
+.menu a:hover {
+  background: #005fa3;
+}
+
+/* TITULOS */
+h2 {
+  text-align: center;
+  margin-top: 40px;
+  font-size: 22px;
+}
+
+/* PRODUCTOS */
+.productos {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  background: white;
+  border-radius: 15px;
+  width: 220px;
+  padding: 15px;
+  text-align: center;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
+
+.card img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.card h3 {
+  font-size: 16px;
+  margin: 10px 0;
+}
+
+.precio {
+  color: #2e7d32;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.boton {
+  display: inline-block;
+  margin-top: 10px;
+  background: #25D366;
+  color: white;
+  padding: 8px 12px;
+  border-radius: 8px;
+  text-decoration: none;
+  font-size: 14px;
+}
+
+/* FOOTER */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #0077cc;
+  color: white;
+  margin-top: 30px;
+}
+</style>
+
+</head>
+<body>
+
+<header>
+  <h1>Julio El Importador</h1>
+  <p>Catálogo Online</p>
+</header>
+
+<nav class="menu">
+  <a href="#invierno">❄️ Invierno</a>
+  <a href="#textil">🧺 Textil</a>
+  <a href="#hogar">🏠 Hogar</a>
+  <a href="#bazar">🍽️ Bazar</a>
+  <a href="#belleza">💄 Belleza</a>
+  <a href="#accesorios">🧢 Accesorios</a>
+</nav>
+
+<!-- ❄️ INVIERNO -->
+<h2 id="invierno">❄️ Invierno</h2>
+<section class="productos">
+  <!-- TUS PRODUCTOS (dejá los que ya tenías) -->
+</section>
+
+<!-- 🧺 TEXTIL -->
+<h2 id="textil">🧺 Textil</h2>
+<section class="productos">
+  <div class="card"><img src="https://templofutbol.vtexassets.com/arquivos/ids/20666140-1200-auto?v=638980303481300000&width=1200&height=auto&aspect=true"><h3>Camiseta Argentina</h3><p class="precio">$35.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://www.distritomoda.com.ar/sites/default/files/imagenes/img_6296_1717078811.jpeg"><h3>Boxer Uomo Estampado</h3><p class="precio">$3.800</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://d22fxaf9t8d39k.cloudfront.net/77ff21243d19e932fcf3afc74c3fe98f6feeb46a3ad7e4b5dc499852a3a0219a54915.jpg"><h3>Boxer Uomo Liso</h3><p class="precio">$3.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://acdn-us.mitiendanube.com/stores/005/179/775/products/1002568006-8721bb571ff214ddc317573543077133-1024-1024.webp"><h3>Boxer Uomo Niños</h3><p class="precio">$3.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://www.melodrama.com.ar/9404-large_default/boxer-de-nene-por-docena.jpg"><h3>Boxer Niño Eco</h3><p class="precio">$1.500</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_823474-MLA103147581371_122025-F.webp"><h3>Conjunto Ropa Interior Infantil</h3><p class="precio">$4.200</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://acdn-us.mitiendanube.com/stores/825/640/products/d_706522-mla44784065378_022021-o-0e9d03b4e90eb8a63416896192575667-1024-1024.webp"><h3>Cola Less Regulables</h3><p class="precio">$2.500</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_735922-MLA110808602829_042026-T.webp"><h3>Cola Less Comun Lisa</h3><p class="precio">$2.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://d22fxaf9t8d39k.cloudfront.net/171ab490664a4fce5f7cbb24f19c1ad28e1ea89292452b2b033294f3097f8181107758.jpg"><h3>Conjunto Capicua</h3><p class="precio">$13.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_612199-MLA78906070418_092024-T.webp"><h3>Bombacha Dama Económica</h3><p class="precio">$1.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_796204-MLA54521861297_032023-F.webp"><h3>Medias Toalla Hombre</h3><p class="precio">$2.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://encrypted-tbn0.gstatic.com/shopping?q=tbn:ANd9GcR6NnkyhUVYEMpDJ-Cv5IuCEuHFpTGna3Z6eAYaRULa5WEBo00Cvi93nv86f5jaYQ_1HRpaqSQ584fRa0V5ktaPxquC1CWj"><h3>Medias Invisibles Dama/Hombre</h3><p class="precio">$2.000 / $7.000 docena</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_914207-MLB105977844602_022026-F-kit-3-meias-femininas-soquete-algodo-macio-respiravel.webp"><h3>Soquete Antideslizante</h3><p class="precio">$4.500</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_923725-MLA99518304628_112025-F.webp"><h3>Media Antideslizante Adulto</h3><p class="precio">$5.400</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_779867-MLA111694061767_052026-F.webp"><h3>Media Antideslizante Niño</h3><p class="precio">$3.200</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_850760-MLA84133788070_052025-F.webp"><h3>Soquete Antideslizante Floyd Talle 0</h3><p class="precio">$2.000</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_630397-MLA72669234392_112023-F.webp"><h3>Soquete Floyd Talle 1</h3><p class="precio">$1.800</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_NQ_NP_2X_807179-MLA72786512735_112023-F.webp"><h3>Media Floyd Talle 2</h3><p class="precio">$2.500</p><a class="boton" href="#">Consultar</a></div>
+
+<div class="card"><img src="https://http2.mlstatic.com/D_920143-MLA94119366157_102025-C.jpg"><h3>Medias Fashion</h3><p class="precio">$1.600</p><a class="boton" href="#">Consultar</a></div>
+</section>
+
+<!-- 🏠 HOGAR -->
+<h2 id="hogar">🏠 Hogar</h2>
+<section class="productos">
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Cortina Blackout</h3>
+    <p class="precio">$15.000</p>
+    <a class="boton" href="#">Consultar</a>
+  </div>
+</section>
+
+<!-- 🍽️ BAZAR -->
+<h2 id="bazar">🍽️ Bazar</h2>
+<section class="productos">
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Repasador Cocina</h3>
+    <p class="precio">$1.200</p>
+    <a class="boton" href="#">Consultar</a>
+  </div>
+</section>
+
+<!-- 💄 BELLEZA -->
+<h2 id="belleza">💄 Belleza</h2>
+<section class="productos">
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Cepillo de Cabello</h3>
+    <p class="precio">$2.000</p>
+    <a class="boton" href="#">Consultar</a>
+  </div>
+</section>
+
+<!-- 🧢 ACCESORIOS -->
+<h2 id="accesorios">🧢 Accesorios</h2>
+<section class="productos">
+  <div class="card">
+    <img src="https://via.placeholder.com/200">
+    <h3>Gorra</h3>
+    <p class="precio">$3.500</p>
+    <a class="boton" href="#">Consultar</a>
+  </div>
+</section>
+
+<footer>
+  © 2026 Julio El Importador - Todos los derechos reservados
+</footer>
+
+</body>
+</html>
