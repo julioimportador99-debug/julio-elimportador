@@ -130,6 +130,95 @@ footer {
 </head>
 <body>
 
+<div id="modal" class="modal">
+  <span class="cerrar" onclick="cerrarModal()">&times;</span>
+
+  <h2 id="titulo"></h2>
+
+  <img id="imagenPrincipal">
+
+  <div id="miniaturas"></div>
+
+  <p id="descripcion"></p>
+  <ul id="caracteristicas"></ul>
+</div>
+
+<style>
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding: 20px;
+  background: rgba(0,0,0,0.95);
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  text-align: center;
+  color: white;
+}
+
+.modal img {
+  max-width: 60%;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+#miniaturas img {
+  width: 60px;
+  margin: 5px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.cerrar {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  font-size: 40px;
+  cursor: pointer;
+}
+</style>
+
+<script>
+function abrirModal(imagenes, titulo, descripcion, caracteristicas) {
+  document.getElementById("modal").style.display = "block";
+
+  document.getElementById("titulo").innerText = titulo;
+  document.getElementById("descripcion").innerText = descripcion;
+
+  // Imagen principal
+  document.getElementById("imagenPrincipal").src = imagenes[0];
+
+  // Miniaturas
+  let contenedor = document.getElementById("miniaturas");
+  contenedor.innerHTML = "";
+
+  imagenes.forEach(img => {
+    let mini = document.createElement("img");
+    mini.src = img;
+    mini.onclick = () => {
+      document.getElementById("imagenPrincipal").src = img;
+    };
+    contenedor.appendChild(mini);
+  });
+
+  // Características
+  let lista = document.getElementById("caracteristicas");
+  lista.innerHTML = "";
+
+  caracteristicas.forEach(item => {
+    let li = document.createElement("li");
+    li.innerText = item;
+    lista.appendChild(li);
+  });
+}
+
+function cerrarModal() {
+  document.getElementById("modal").style.display = "none";
+}
+</script>
+  
 <header>
   <h1>Julio El Importador</h1>
   <p>Catálogo Online</p>
@@ -271,6 +360,29 @@ footer {
 <!-- 🧺 TEXTIL -->
 <h2 id="textil">🧺 Textil</h2>
 <section class="productos">
+
+<div class="card">
+  <img src="https://templofutbol.vtexassets.com/arquivos/ids/20666140-1200-auto?v=638980303481300000&width=1200&height=auto&aspect=true"
+  onclick="abrirModal(
+    [
+      'https://sporting.vtexassets.com/arquivos/ids/2264195-1200-1200?v=638990641405430000&width=1200&height=1200&aspect=true',
+      'https://sporting.vtexassets.com/arquivos/ids/2264194-1200-1200?v=638990641405430000&width=1200&height=1200&aspect=true'
+    ],
+    'Camiseta Argentina',
+    'Camiseta de excelente calidad, ideal para invierno o uso diario.',
+    [
+      'Talles disponibles',
+      'Tela térmica',
+      'Muy cómoda',
+      'Alta durabilidad'
+    ]
+  )">
+
+  <h3>Camiseta Argentina</h3>
+  <p class="precio">$35.000</p>
+</div>
+
+  
   <div class="card"><img src="https://templofutbol.vtexassets.com/arquivos/ids/20666140-1200-auto?v=638980303481300000&width=1200&height=auto&aspect=true"><h3>Camiseta Argentina</h3><p class="precio">$35.000</p><a class="boton" href="#">Consultar</a></div>
 
 <div class="card"><img src="https://www.distritomoda.com.ar/sites/default/files/imagenes/img_6296_1717078811.jpeg"><h3>Boxer Uomo Estampado</h3><p class="precio">$3.800</p><a class="boton" href="#">Consultar</a></div>
